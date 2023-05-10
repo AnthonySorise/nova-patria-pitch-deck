@@ -1,0 +1,8 @@
+body {
+    overflow: hidden;
+}
+
+#SlidesContainer>div {
+    overflow-y: auto;
+    height: 100vh;
+}
