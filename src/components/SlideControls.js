@@ -2,6 +2,7 @@ import React from 'react';
 import { styled } from "@mui/material/styles";
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import './SlideControls.scss';
 
 const Root = styled('div')({
     position: 'fixed',
@@ -10,15 +11,15 @@ const Root = styled('div')({
     right: 0,
     display: 'flex',
     justifyContent: 'center',
-    paddingBottom: '1rem',
 });
 
 const StyledButtonGroup = styled(ButtonGroup)({
-    backgroundColor: 'transparent',
+    backgroundColor: ""
 });
 
 const StyledButton = styled(Button)({
-    border: '1px solid black',
+    backgrounColor: 'transparent',
+    border: '1px solid silver',
     borderRadius: 0,
     fontSize: '1.5rem',
     textTransform: 'uppercase',
@@ -27,6 +28,7 @@ const StyledButton = styled(Button)({
         backgroundColor: 'black',
         color: 'white',
     },
+    margin: '0 0.5em'
 });
 
 function SlideControls({ activeSlide, slideTotal, handleButtonClick }) {
@@ -40,8 +42,8 @@ function SlideControls({ activeSlide, slideTotal, handleButtonClick }) {
 
     return (
         <Root>
-            <div>
-                <StyledButtonGroup>
+            <div id="SlideControls">
+                <div>
                     <StyledButton
                         onClick={handlePrevSlide}
                         disabled={activeSlide === 0}
@@ -54,7 +56,12 @@ function SlideControls({ activeSlide, slideTotal, handleButtonClick }) {
                     >
                         Next
                     </StyledButton>
-                </StyledButtonGroup>
+                </div>
+                <div id="copyright">
+                    <span>Copyright © 2023 </span>
+                    <a href='https://sowerinteractive.com/' target='_blank'>Sower Interactive LLC</a>
+                    <span>. All rights reserved.</span>
+                </div>
             </div>
         </Root>
     );
