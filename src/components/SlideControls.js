@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import { styled } from "@mui/material/styles";
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
 import './SlideControls.scss';
 
 const Root = styled('div')({
@@ -13,13 +12,9 @@ const Root = styled('div')({
     justifyContent: 'center',
 });
 
-const StyledButtonGroup = styled(ButtonGroup)({
-    backgroundColor: ""
-});
-
 const StyledButton = styled(Button)({
     backgrounColor: 'transparent',
-    border: '1px solid silver',
+
     borderRadius: 0,
     fontSize: '1.5rem',
     textTransform: 'uppercase',
@@ -31,13 +26,18 @@ const StyledButton = styled(Button)({
     margin: '0 0.5em'
 });
 
-function SlideControls({ activeSlide, slideTotal, handleButtonClick }) {
+function SlideControls({ slideTotal, scrollToSlide }) {
+    const [activeSlide, setActiveSlide] = useState(0);
+
+    useEffect(() => {
+        scrollToSlide(activeSlide);
+    }, [activeSlide]);
 
     const handlePrevSlide = () => {
-        handleButtonClick(Math.max(0, activeSlide - 1));
+        setActiveSlide(Math.max(0, activeSlide - 1));
     };
     const handleNextSlide = () => {
-        handleButtonClick(Math.min(slideTotal - 1, activeSlide + 1));
+        setActiveSlide(Math.min(slideTotal - 1, activeSlide + 1));
     };
 
     return (
@@ -53,6 +53,9 @@ function SlideControls({ activeSlide, slideTotal, handleButtonClick }) {
                     <StyledButton
                         onClick={handleNextSlide}
                         disabled={activeSlide === slideTotal - 1}
+                        sx={{
+                            boxShadow: activeSlide === 0 ? '0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0' : 0 
+                        }}
                     >
                         Next
                     </StyledButton>
