@@ -13,6 +13,7 @@ import SupplyDemandImage from './assets/supply-demand-example.png'
 import AqueductImage from './assets/aqueduct-example.png'
 import CitiesImage from './assets/cities-example.png'
 import EcnomyImage from './assets/economy-example.png'
+import RoadsImage from './assets/roads-example.png'
 
 import './App.scss';
 
@@ -69,7 +70,7 @@ const App = () => {
                                         Nova Patria
                                     </h1>
                                     <p>
-                                        Embark on a journey with Nova Patria, a deep economic, transport, and city simulation game set in a alternate reality where a steam-powered Roman Empire never fell but instead ventured into the New World. As a colonial governor at the precipice of an early industrial revolution, plot your path, expand horizons, and meticulously manage your burgeoning cities and resources within a rich, dynamic, isometric, procedurally generated world.
+                                        Drive the gears of progress and innovation in Nova Patria, a deep economic, transport, and city simulation game set in an alternate history where a steam-powered Roman Empire never fell but instead ventured into the New World. As a colonial governor at the precipice of an early industrial revolution, plot your path, expand horizons, and meticulously manage your burgeoning cities and resources within a rich, dynamic, isometric, procedurally generated world.
                                     </p>
                                 </div>
                                 <a href="https://sowerinteractive.com/" target="_blank">
@@ -103,7 +104,7 @@ const App = () => {
                                 <FeatureCard
                                     title="Aqueducts and Water Networks"
                                     image={AqueductImage}
-                                    description="In Nova Patria, water is the lifeblood of your cities, and aqueducts are the arteries that carry it. Aqueducts must start at the highest elevation of a spring tile and can be extended up to a certain distance, enabling you to bring water to areas previously unsuitable for city expansion. Building fountains at the end of aqueducts further increases the water's reach, allowing you to construct buildings and grow your city. This crucial feature can be used strategically to either establish new cities in resource-rich areas or expand existing ones, enhancing your city's production capabilities and growth potential."
+                                    description="In Nova Patria, water is the lifeblood of your cities. Rivers and aqueducts are the arteries that carry it. Aqueducts must start at the highest elevation of a spring tile and can be extended up to a certain distance, enabling you to bring water to areas previously unsuitable for city expansion. Building fountains at the end of aqueducts further increases the water's reach, allowing you to construct buildings and grow your city. This crucial feature can be used strategically to either establish new cities in resource-rich areas or expand existing ones, enhancing your city's production capabilities and growth potential."
                                     devlogLinks={["https://youtu.be/-ja3vau5O-Q?t=144"]}
                                 />
                                 <FeatureCard
@@ -125,8 +126,9 @@ const App = () => {
                                     devlogLinks={["https://youtu.be/nE2rpJ-T3hE?t=55"]}
                                 />
                                 <FeatureCard
-                                    title="Transportation Networks"
-                                    description="To do"
+                                    title="Transportation Networks: Pathways to Progress"
+                                    image={RoadsImage}
+                                    description="Master the art of movement in Nova Patria with our unique transportation system. Roads weave their paths not on tiles, but between them, allowing for a more efficient use of space within your expanding cities. Public roads accelerate the flow of goods, boosting your economic efficiency. When resources are produced near their demand points, they autonomously move to meet needs. For greater distances, a robust transportation network is essential. As a governor, you can construct diverse transport vehicles - from humble carts to advanced trains and even airships in the late game. Establish strategic trade routes and watch your colony thrive."
                                 />
                                 <FeatureCard
                                     title="Diplomacy and Research"
