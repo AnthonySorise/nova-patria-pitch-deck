@@ -18,7 +18,10 @@ export default function FeatureCard({ title, image, description, devlogLinks }) 
                 flexDirection: 'column',
                 justifyContent: 'space-between',
                 minHeight: 'fit-content', // Adjusts the height based on content
-                flex: '1 1 calc(50% - 2em)'
+                flex: {
+                    xs: '1 1 100%',
+                    md: '1 1 calc(50% - 2em)'
+                },
             }}
         >
             {image &&
