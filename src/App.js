@@ -96,7 +96,7 @@ const App = () => {
 
                             <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-between", gap:"2em"}}>
                                 <FeatureCard
-                                    title="Proceduraly Generated Isometric World"
+                                    title="Procedurally Generated Isometric World"
                                     image={Slide01BackgroundImage}
                                     description="Every game is unique. Nova Patria's procedurally generated environment creates diverse landscapes— oceans, rivers, hills, mountains, forests, and drylands. Each plays a crucial role, shaping gameplay and adding a layer of strategic depth to your city and resource management challenges."
                                 />
