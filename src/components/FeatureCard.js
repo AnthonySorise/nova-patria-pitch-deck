@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function FeatureCard({ title, image, description, devlogLinks, isFullWidth }) {
+export default function FeatureCard({ title, image, description, buttonNames, buttonLinks, isFullWidth, isBold }) {
     // Check if description is an array, if not make it into a single-item array
     const descriptionArray = Array.isArray(description) ? description : [description];
 
@@ -44,23 +44,24 @@ export default function FeatureCard({ title, image, description, devlogLinks, is
                 <Typography variant="body2" paragraph sx={{marginBottom:0}}>
                     {descriptionArray.map((paragraph, index) => (
                         <React.Fragment key={index}>
-                            <span>{paragraph}</span>
+                            <span style={{fontWeight: isBold ? "bold" : ""}}>{paragraph}</span>
                             {index < descriptionArray.length - 1 && <><br /><br /></>}
                         </React.Fragment>
                     ))}
                 </Typography>
             </CardContent>
-            {devlogLinks && (
+            {buttonLinks && buttonNames && (
                 <CardActions>
-                    {devlogLinks.map((link, index) => (
+                    {buttonLinks.map((link, index) => (
                         <Button
                             sx={{
+                                border:"1px solid silver",
                                 '&:hover': {
                                     backgroundColor: 'silver',
                                     color: 'black'
                                 }
                             }}
-                            key={index} size="small" href={link} target="_blank">Devlog Example</Button>
+                            key={index} size="small" href={link} target="_blank">{buttonNames[index]}</Button>
                     ))}
                 </CardActions>
             )}
