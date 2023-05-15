@@ -178,8 +178,8 @@ const App = () => {
                                     description="Nova Patria's recognition in GamerZakh's 'The Most Anticipated CITY-BUILDING Games in 2023' video not only attests to the game's distinctive appeal but also indicates the effectiveness of its outreach strategies. The prominent gaming channel, which boasts over 189,000 subscribers, has brought the game into the spotlight, amassing over 290,000 views for the video. Despite the existence of a collective segment for smaller indie games in the video, Nova Patria's unique allure merited an individual highlight. This placement is a testament to the game's potential to carve out its own space in the competitive gaming landscape, and a nod to the growing anticipation in the marketplace for a title of this nature."
                                 />
 
-                                <div style={{ display: "flex", justifyContent: "center" }}>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/D-MXFPeLjts?start=1372&amp;modestbranding=1&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen=""></iframe>
+                                <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+                                    <iframe style={{maxWidth:"100%"}} width="560" height="315" src="https://www.youtube.com/embed/D-MXFPeLjts?start=1372&amp;modestbranding=1&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen=""></iframe>
                                 </div>
 
                                 <FeatureCard
@@ -187,8 +187,8 @@ const App = () => {
                                     description="Initiated in June 2022, six months into the game's development, the Nova Patria devlog series has steadily charted the course of the game's evolution. With six comprehensive videos, it has attracted a dedicated audience of over 130 subscribers, and garnered more than 3,000 views. This peek into the developmental journey of Nova Patria showcases progress, highlights milestones, and shares the behind-the-scenes labor of love that goes into creating an engaging game. The devlog series not only cultivates a bond with the burgeoning community but also stands as a testament to the game's continual evolution, promising an immersive and unique experience upon release."
                                 />
 
-                                <div style={{ display: "flex", justifyContent: "center" }}>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/?listType=playlist&amp;list=PLyezjG2qP1t3x91OZVOwd1AMgIc1WvdVO&amp;modestbranding=1&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen=""></iframe>
+                                <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+                                    <iframe style={{maxWidth:"100%"}} width="560" height="315" src="https://www.youtube.com/embed/?listType=playlist&amp;list=PLyezjG2qP1t3x91OZVOwd1AMgIc1WvdVO&amp;modestbranding=1&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen=""></iframe>
                                 </div>
 
                                 <FeatureCard
