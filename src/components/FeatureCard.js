@@ -6,7 +6,10 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function FeatureCard({ title, image, description, devlogLinks }) {
+export default function FeatureCard({ title, image, description, devlogLinks, isFullWidth }) {
+    // Check if description is an array, if not make it into a single-item array
+    const descriptionArray = Array.isArray(description) ? description : [description];
+
     return (
         <Card
             sx={{
@@ -17,8 +20,8 @@ export default function FeatureCard({ title, image, description, devlogLinks }) 
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
-                minHeight: 'fit-content', // Adjusts the height based on content
-                flex: {
+                minHeight: 'fit-content',
+                flex: isFullWidth ? '1 1 100%' : {
                     xs: '1 1 100%',
                     md: '1 1 calc(50% - 2em)'
                 },
@@ -33,17 +36,31 @@ export default function FeatureCard({ title, image, description, devlogLinks }) 
                 />
             }
             <CardContent sx={{ marginBottom: 'auto' }}>
-                <Typography gutterBottom variant="h5" component="div">
-                    {title}
-                </Typography>
-                <Typography variant="body2">
-                    {description}
+                {title &&
+                    <Typography gutterBottom variant="h5" component="div">
+                        {title}
+                    </Typography>
+                }
+                <Typography variant="body2" paragraph sx={{marginBottom:0}}>
+                    {descriptionArray.map((paragraph, index) => (
+                        <React.Fragment key={index}>
+                            <span>{paragraph}</span>
+                            {index < descriptionArray.length - 1 && <><br /><br /></>}
+                        </React.Fragment>
+                    ))}
                 </Typography>
             </CardContent>
             {devlogLinks && (
                 <CardActions>
                     {devlogLinks.map((link, index) => (
-                        <Button key={index} size="small" href={link} target="_blank">Devlog Example</Button>
+                        <Button
+                            sx={{
+                                '&:hover': {
+                                    backgroundColor: 'silver',
+                                    color: 'black'
+                                }
+                            }}
+                            key={index} size="small" href={link} target="_blank">Devlog Example</Button>
                     ))}
                 </CardActions>
             )}

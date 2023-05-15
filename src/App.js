@@ -63,7 +63,7 @@ const App = () => {
                         <StyledContainer>
                             <div style={{ display: "flex", justifyContent: "space-between" }}>
                                 <div>
-                                    <h2 style={{ margin: "0.25em 0" }}>
+                                    <h2 style={{ margin: "0 0 0.25em 0" }}>
                                         Introducing
                                     </h2>
                                     <h1 style={{ fontSize: "4em", margin: 0 }}>
@@ -73,7 +73,7 @@ const App = () => {
                                         Drive the gears of progress and innovation in Nova Patria, a deep economic, transport, and city simulation game set in an alternate history where a steam-powered Roman Empire never fell but instead ventured into the New World. As a colonial governor at the precipice of an early industrial revolution, plot your path, expand horizons, and meticulously manage your burgeoning cities and resources within a rich, dynamic, isometric, procedurally generated world.
                                     </p>
                                 </div>
-                                <a href="https://sowerinteractive.com/" target="_blank">
+                                <a href="https://sowerinteractive.com/" target="_blank" rel="noreferrer">
                                     <div style={{ maxWidth: "100px", display: "flex", flexFlow: "column" }}>
                                         <img src={SowerInteractiveLogo} alt="Sower Interactive"
                                             style={{ maxWidth: "80px", margin: "auto" }} />
@@ -91,11 +91,26 @@ const App = () => {
                     <div className="slide-content">
                         <StyledContainer>
 
+                            <h1 style={{ margin: "0 0 0.5em 0" }}>
+                                The Mission
+                            </h1>
+
+                            <FeatureCard
+                                description={['The mission of Nova Patria is to rekindle the intrigue and accessible complexity of simulation and strategy PC games from the \'90s and early 2000s, while capturing the compelling "one more turn" sensation. This allure is achieved through a finely woven tapestry of simulation systems, allowing players to strategize and achieve both short-term and long-term player-driven goals.',
+                                    'From the outset, Nova Patria beckons players to dive in, start creating, and witness the immediate impact of their choices on the vibrant, dynamic simulation. The game\'s depth gradually unfurls, revealing a rich stratum of strategic potential that rewards careful planning, adaptability, and familiarity.',
+                                    'The simulation is transparent, with visual and readily digestible information. The aim is to eliminate hidden mechanics, adopting a tabletop approach to game design that ensures players can fully comprehend, influence, and master the game\'s systems.',
+                                    'Nova Patria is not about refurbishing an old classic; it\'s about drawing inspiration from a diverse range of sources to offer a distinctive experience. It\'s a melding of city and nation-building dynamics from Sid Meier\'s Colonization, economic simulation from the Railroad Tycoon series, and city-building mechanics of classic Sim City games. But it\'s not just about paying homage to these classics; Nova Patria leverages modern hardware to enhance these tried-and-true mechanics, providing a transparent and rewarding gameplay experience. The real magic of Nova Patria lies in its layered complexity - a game easy to pick up, but with a depth that invites mastery.']}
+
+
+                                isFullWidth={true}
+                            />
+
                             <h1 style={{ margin: "0.5em 0" }}>
                                 Features
                             </h1>
 
-                            <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-between", gap:"2em"}}>
+                            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "2em" }}>
+
                                 <FeatureCard
                                     title="Procedurally Generated Isometric World"
                                     image={Slide01BackgroundImage}
@@ -128,15 +143,16 @@ const App = () => {
                                 <FeatureCard
                                     title="Transportation Networks: Pathways to Progress"
                                     image={RoadsImage}
-                                    description="Master the art of movement in Nova Patria with our unique transportation system. Roads weave their paths not on tiles, but between them, allowing for a more efficient use of space within your expanding cities. Public roads accelerate the flow of goods, boosting your economic efficiency. When resources are produced near their demand points, they autonomously move to meet needs. For greater distances, a robust transportation network is essential. As a governor, you can construct diverse transport vehicles - from humble carts to advanced trains and even airships in the late game. Establish strategic trade routes and watch your colony thrive."
+                                    description="Nova Patria's transportation system takes a novel approach - roads wind and interconnect via vertices of tiles, instead of simply occupying them. This design allows for a more fluid, natural pathing system, and a greater sense of scale within your cities. It also facilitates diagonal travel, bypassing the awkward zigzags of conventional grid-based movement. Public roads expedite the movement of goods, boosting economic productivity. Nearby resources autonomously navigate to their points of demand, while farther ones rely on your strategic transportation network. As governor, commission an array of transport vehicles - from rudimentary carts to advanced trains, and eventually, airships. By establishing well-thought-out trade routes, you set your colony on a path to prosperity."
                                 />
                                 <FeatureCard
                                     title="Diplomacy and Research"
-                                    description="To do"
+                                    description="As a governor, you shoulder the responsibility of aligning the needs of your thriving colony with the overarching interests of the Empire. Engage in nuanced diplomacy and navigate complex relationships beyond your borders. To fuel progress, finance institutions abroad, accelerating technological advancements and propelling your colony into a new age. With strategic diplomacy and calculated investment in research, your influence in the New World will be unparalleled."
                                 />
                                 <FeatureCard
                                     title="Meta Game Progression"
-                                    description="To do"
+                                    description="
+                                    Dive into Nova Patria's innovative Meta Game Progression, a system that intertwines short-term objectives with long-term strategy. From the onset, players handpick three unique goals, turning every playthrough into a personalized mission. Triumph isn't just its own reward - achieve your targets and unlock potent perks that shape future expeditions. With the ability to employ up to three perks each game, the strategic possibilities multiply, ensuring no two games are the same. This continuous cycle of setting goals, earning perks, and discovering synergistic combinations infuses Nova Patria with enduring replayability. Each new game brings a fresh start, offering novel challenges and prospects in this parallel history. Forge your path, craft your narrative, and make Nova Patria truly your own."
                                 />
                             </div>
 
@@ -148,6 +164,9 @@ const App = () => {
                 <div className="slide" id="slide03" style={{ backgroundImage: `url(${Slide03BackgroundImage})` }}>
                     <div className="slide-content">
                         <StyledContainer>
+                            <h1 style={{ margin: "0 0 0.5em 0" }}>
+                                Community & Marketing
+                            </h1>
 
                         </StyledContainer>
                     </div>
@@ -155,7 +174,9 @@ const App = () => {
                 <div className="slide" id="slide03" style={{ backgroundImage: `url(${Slide04BackgroundImage})` }}>
                     <div className="slide-content">
                         <StyledContainer>
-
+                            <h1 style={{ margin: "0 0 0.5em 0" }}>
+                                Development
+                            </h1>
                         </StyledContainer>
                     </div>
                 </div>
