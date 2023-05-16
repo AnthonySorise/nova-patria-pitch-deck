@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function FeatureCard({ title, image, description, buttonNames, buttonLinks, isFullWidth, isBold }) {
+export default function FeatureCard({ title, image, sideImage, description, html, buttonNames, buttonLinks, isFullWidth, isBold }) {
     // Check if description is an array, if not make it into a single-item array
     const descriptionArray = Array.isArray(description) ? description : [description];
 
@@ -41,21 +41,31 @@ export default function FeatureCard({ title, image, description, buttonNames, bu
                         {title}
                     </Typography>
                 }
-                <Typography variant="body2" paragraph sx={{marginBottom:0}}>
-                    {descriptionArray.map((paragraph, index) => (
-                        <React.Fragment key={index}>
-                            <span style={{fontWeight: isBold ? "bold" : ""}}>{paragraph}</span>
-                            {index < descriptionArray.length - 1 && <><br /><br /></>}
-                        </React.Fragment>
-                    ))}
-                </Typography>
+                <div style={{ display: 'flex' }}>
+                    {sideImage &&
+                        <div style={{ width: 'fit-content', minWidth: "Min(25vw, fit-content)", marginRight: '15px' }}>
+                            <img src={sideImage} alt={title} style={{ width: '100%' }} />
+                        </div>
+                    }
+                    <Typography variant="body2" paragraph sx={{ marginBottom: 0 }}>
+                        {descriptionArray.map((paragraph, index) => (
+                            <React.Fragment key={index}>
+                                <span style={{ fontWeight: isBold ? "bold" : "" }}>{paragraph}</span>
+                                {index < descriptionArray.length - 1 && <><br /><br /></>}
+                            </React.Fragment>
+                        ))}
+                        {html && (
+                            <div dangerouslySetInnerHTML={{ __html: html }}></div>
+                        )}
+                    </Typography>
+                </div>
             </CardContent>
             {buttonLinks && buttonNames && (
                 <CardActions>
                     {buttonLinks.map((link, index) => (
                         <Button
                             sx={{
-                                border:"1px solid silver",
+                                border: "1px solid silver",
                                 '&:hover': {
                                     backgroundColor: 'silver',
                                     color: 'black'

@@ -14,6 +14,9 @@ import AqueductImage from './assets/aqueduct-example.png'
 import CitiesImage from './assets/cities-example.png'
 import EcnomyImage from './assets/economy-example.png'
 import RoadsImage from './assets/roads-example.png'
+import TimelinePastImage from './assets/timeline-past.png'
+import TimelineFutureImage from './assets/timeline-future.png'
+import AnthonyImage from './assets/anthony.png'
 
 import './App.scss';
 
@@ -88,14 +91,7 @@ const App = () => {
                                 />
                             </div>
                             <VideoShowcase />
-                        </StyledContainer>
-                    </div>
-                </div>
-                <div className="slide" id="slide02" style={{ backgroundImage: `url(${Slide02BackgroundImage})` }}>
-                    <div className="slide-content">
-                        <StyledContainer>
-
-                            <h1 style={{ margin: "0 0 0.5em 0" }}>
+                            <h1 style={{ margin: "0.5em 0" }}>
                                 The Mission
                             </h1>
 
@@ -106,8 +102,14 @@ const App = () => {
                                     'Nova Patria is not about refurbishing an old classic; it\'s about drawing inspiration from a diverse range of sources to offer a distinctive experience. It\'s a melding of city and nation-building dynamics from Sid Meier\'s Colonization, economic simulation from the Railroad Tycoon series, and city-building mechanics of classic Sim City games. But it\'s not just about paying homage to these classics; Nova Patria leverages modern hardware to enhance these tried-and-true mechanics, providing a transparent and rewarding gameplay experience. The real magic of Nova Patria lies in its layered complexity - a game easy to pick up, but with a depth that invites mastery.']}
                                 isFullWidth={true}
                             />
+                        </StyledContainer>
+                    </div>
+                </div>
+                <div className="slide" id="slide02" style={{ backgroundImage: `url(${Slide02BackgroundImage})` }}>
+                    <div className="slide-content">
+                        <StyledContainer>
 
-                            <h1 style={{ margin: "0.5em 0" }}>
+                            <h1 style={{ margin: "0 0 0.5em 0" }}>
                                 Features
                             </h1>
 
@@ -212,10 +214,45 @@ const App = () => {
                             <h1 style={{ margin: "0 0 0.5em 0" }}>
                                 Development
                             </h1>
+
+                            <FeatureCard
+                                description={'The development of Nova Patria began in December 2021, with completion targeted for October 2024. Spearheaded by Anthony Sorise, the project has been a balance of part-time and full-time dedication. Approximately half of the development period involved a part-time commitment of 10 to 15 hours per week, while the remaining duration saw a full-time commitment of 40 to 50 hours per week. Presently, the project is more than halfway through the Alpha stage, and steadily progressing towards the final product.'}
+                            />
+
+                            <h2 style={{ margin: "1em 0 0.5em 0" }}>
+                                Completed Milestones
+                            </h2>
+                            <img style={{width:"100%"}} src={TimelinePastImage} />
+                            <h2 style={{ margin: "1em 0 0.5em 0" }}>
+                                Planned Milestones
+                            </h2>
+                            <img style={{width:"100%"}} src={TimelineFutureImage} />
+
+                            <h2 style={{ margin: "1em 0 0.5em 0" }}>
+                                About the Developer
+                            </h2>
+                            <FeatureCard
+                                sideImage={AnthonyImage}
+                                description={[
+                                    "Meet Anthony Sorise, the man behind Nova Patria and founder of Sower Interactive. With roots in audio production for AAA titles like Call of Duty: Black Ops II, XCOM II, and Civilization VI, Anthony developed a fascination for programming, leading him to master C# and Unity in 2012.", 
+                                    "Following an intensive web development program, Anthony worked at various tech companies.  Here, Anthony honed his skills in UI, user experience, and data visualization, integral components now embedded into the fabric of Nova Patria's development.",
+                                    "As an avid enthusiast of strategy games, he has dedicated countless hours exploring the genre, delving deeply into the nuances of game design. Today, Anthony balances his diverse background to craft Nova Patria into a strategy game that resonates with fellow enthusiasts. Each design decision and meticulous refinement reflects his commitment to creating a game he, as a gamer, would love to play.",
+                                    "Nova Patria is the embodiment of years of passion, tireless effort, and enriched experience - a tribute to the journey of its dedicated developer, Anthony Sorise, and the ambitious vision of Sower Interactive.",]}
+                                buttonNames={["Portfolio", "Email"]}
+                                buttonLinks={["https://anthonysorise.com/", "mailto:anthony.sorise@sowerinteractive.com"]}
+                            />
+
+                            <h2 style={{ margin: "1em 0 0.5em 0" }}>
+                                Publisher Needs
+                            </h2>
+                            <FeatureCard
+                                html={'<span>To fully realize the vision of Nova Patria, a robust partnership is sought that can provide:</span><ul><li><b>Full-time Salary Support: </b> To ensure undivided attention and commitment to the project, financial support for a full-time salary is needed for the remaining 1.5 years of development. This allows for a dedication of 40 to 50 hours per week to the game, accelerating development and ensuring quality.</li><li><b>Art and Music Commissioning: </b> Art currently used is intended to be temp art. Art assets and music assets must be commisioned from a third party.</li><li><b>Collaborative Input: </b> Aside from financial support, Anthony is open to discussions about potential marketing support, feedback on game design and mechanics, and distribution strategies. This is to ensure that Nova Patria reaches its intended audience and achieves its full market potential.</li></ul>'}
+                            />
                         </StyledContainer>
                     </div>
                 </div>
             </div>
+
             <SlideControls
                 slideTotal={slideTotal}
                 scrollToSlide={scrollToSlide}
