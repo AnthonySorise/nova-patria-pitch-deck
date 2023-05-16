@@ -222,11 +222,11 @@ const App = () => {
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
                                 Completed Milestones
                             </h2>
-                            <img style={{width:"100%"}} src={TimelinePastImage} />
+                            <img style={{width:"100%"}} alt="timeline - past milestones" src={TimelinePastImage} />
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
                                 Planned Milestones
                             </h2>
-                            <img style={{width:"100%"}} src={TimelineFutureImage} />
+                            <img style={{width:"100%"}} alt="timeline - future milestones" src={TimelineFutureImage} />
 
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
                                 About the Developer

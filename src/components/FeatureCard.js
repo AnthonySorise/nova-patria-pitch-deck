@@ -43,7 +43,13 @@ export default function FeatureCard({ title, image, sideImage, description, html
                 }
                 <div style={{ display: 'flex' }}>
                     {sideImage &&
-                        <div style={{ width: 'fit-content', minWidth: "Min(25vw, fit-content)", marginRight: '15px' }}>
+                                    <div
+                                    style={{
+                                      width: 'fit-content',
+                                      minWidth: '125px',
+                                      marginRight: '15px',
+                                    }}
+                                  >
                             <img src={sideImage} alt={title} style={{ width: '100%' }} />
                         </div>
                     }
