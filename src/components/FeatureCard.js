@@ -60,10 +60,11 @@ export default function FeatureCard({ title, image, sideImage, description, html
                                 {index < descriptionArray.length - 1 && <><br /><br /></>}
                             </React.Fragment>
                         ))}
-                        {html && (
+
+                    </Typography>
+                    {html && (
                             <div dangerouslySetInnerHTML={{ __html: html }}></div>
                         )}
-                    </Typography>
                 </div>
             </CardContent>
             {buttonLinks && buttonNames && (

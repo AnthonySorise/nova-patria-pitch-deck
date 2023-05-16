@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { styled } from "@mui/material/styles";
 import Button from '@mui/material/Button';
 import './SlideControls.scss';
@@ -26,12 +26,40 @@ const StyledButton = styled(Button)({
     margin: '0 0.5em'
 });
 
-function SlideControls({ slideTotal, scrollToSlide }) {
+function SlideControls({ slideTotal, scrollToSlide, slidesContainerRef }) {
     const [activeSlide, setActiveSlide] = useState(0);
+    const [isUnlockButtonGlow, setIsUnlockButtonGlow] = useState(false);
 
+    //button glow
+    useEffect(() => {
+        setIsUnlockButtonGlow(false);
+    
+        let slide;
+        const handleScroll = () => {
+            if (slide) {
+                const isBottom = slide.scrollHeight - slide.scrollTop === slide.clientHeight;
+                setIsUnlockButtonGlow(isBottom);
+            }
+        };
+        if (slidesContainerRef.current) {
+            slide = slidesContainerRef.current.children[activeSlide].firstElementChild.firstElementChild;
+            if (slide) {
+                slide.addEventListener('scroll', handleScroll);
+            }
+        }
+    
+        // Cleanup: remove the event listener when the component unmounts
+        return () => {
+            if (slide) {
+                slide.removeEventListener('scroll', handleScroll);
+            }
+        };
+    }, [activeSlide, slidesContainerRef]); // Depend on activeSlide and slidesContainerRef
+
+    //scroll to activeSlide
     useEffect(() => {
         scrollToSlide(activeSlide);
-    }, [activeSlide]);
+    }, [activeSlide, scrollToSlide]);
 
     const handlePrevSlide = () => {
         setActiveSlide(Math.max(0, activeSlide - 1));
@@ -54,7 +82,7 @@ function SlideControls({ slideTotal, scrollToSlide }) {
                         onClick={handleNextSlide}
                         disabled={activeSlide === slideTotal - 1}
                         sx={{
-                            boxShadow: activeSlide === 0 ? '0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0' : 0 
+                            boxShadow: activeSlide !== slideTotal - 1 && isUnlockButtonGlow ? '0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0' : 0
                         }}
                     >
                         Next
@@ -62,7 +90,7 @@ function SlideControls({ slideTotal, scrollToSlide }) {
                 </div>
                 <div id="copyright">
                     <span>Copyright © 2023 </span>
-                    <a href='https://sowerinteractive.com/' target='_blank'>Sower Interactive LLC</a>
+                    <a href='https://sowerinteractive.com/' target='_blank' rel='noreferrer'>Sower Interactive LLC</a>
                     <span>. All rights reserved.</span>
                 </div>
             </div>

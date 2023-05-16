@@ -37,13 +37,15 @@ const App = () => {
         const slidesContainer = slidesContainerRef.current;
         const slideElements = slidesContainer.querySelectorAll('.slide');
         const activeSlideElement = slideElements.item(slideIndex);
+        const innerContent = activeSlideElement?.firstElementChild?.firstElementChild;
 
-        if (activeSlideElement) {
+        if (activeSlideElement && innerContent) {
+            innerContent.scrollTop = 0;
             activeSlideElement.scrollIntoView({
-                behavior: 'smooth'
+                behavior: 'smooth',
             });
         }
-    }
+    };
 
     const StyledContainer = styled(Container)`
         background-color: rgba(0, 0, 0, 0.8);
@@ -181,7 +183,16 @@ const App = () => {
                                 />
 
                                 <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
-                                    <iframe style={{maxWidth:"100%"}} width="560" height="315" src="https://www.youtube.com/embed/D-MXFPeLjts?start=1372&amp;modestbranding=1&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen=""></iframe>
+                                    <iframe
+                                        style={{ maxWidth: "100%" }}
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/D-MXFPeLjts?start=1372&amp;modestbranding=1&amp;rel=0"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen>
+                                    </iframe>
                                 </div>
 
                                 <FeatureCard
@@ -190,7 +201,16 @@ const App = () => {
                                 />
 
                                 <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
-                                    <iframe style={{maxWidth:"100%"}} width="560" height="315" src="https://www.youtube.com/embed/?listType=playlist&amp;list=PLyezjG2qP1t3x91OZVOwd1AMgIc1WvdVO&amp;modestbranding=1&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen=""></iframe>
+                                    <iframe
+                                        style={{ maxWidth: "100%" }}
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/?listType=playlist&amp;list=PLyezjG2qP1t3x91OZVOwd1AMgIc1WvdVO&amp;modestbranding=1&amp;rel=0"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen>
+                                    </iframe>
                                 </div>
 
                                 <FeatureCard
@@ -222,11 +242,11 @@ const App = () => {
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
                                 Completed Milestones
                             </h2>
-                            <img style={{width:"100%"}} alt="timeline - past milestones" src={TimelinePastImage} />
+                            <img style={{ width: "100%" }} alt="timeline - past milestones" src={TimelinePastImage} />
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
                                 Planned Milestones
                             </h2>
-                            <img style={{width:"100%"}} alt="timeline - future milestones" src={TimelineFutureImage} />
+                            <img style={{ width: "100%" }} alt="timeline - future milestones" src={TimelineFutureImage} />
 
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
                                 About the Developer
@@ -234,7 +254,7 @@ const App = () => {
                             <FeatureCard
                                 sideImage={AnthonyImage}
                                 description={[
-                                    "Meet Anthony Sorise, the man behind Nova Patria and founder of Sower Interactive. With roots in audio production for AAA titles including Call of Duty: Black Ops II, XCOM II, and Civilization VI, Anthony developed a fascination for programming that in 2012 initiated his journey to master C# and Unity.", 
+                                    "Meet Anthony Sorise, the man behind Nova Patria and founder of Sower Interactive. With roots in audio production for AAA titles including Call of Duty: Black Ops II, XCOM II, and Civilization VI, Anthony developed a fascination for programming that in 2012 initiated his journey to master C# and Unity.",
                                     "Following an intensive web development program in 2017, Anthony worked at various tech companies.  Here, Anthony honed his skills in UI, user experience, and data visualization, integral components now embedded into the fabric of Nova Patria's development.",
                                     "As an avid enthusiast of strategy games, he has dedicated countless hours exploring the genre, delving deeply into the nuances of game design. Today, Anthony balances his diverse background to craft Nova Patria into a strategy game that resonates with fellow enthusiasts. Each design decision and meticulous refinement reflects his commitment to creating a game he, as a gamer, would love to play.",
                                     "Nova Patria is the embodiment of years of passion, tireless effort, and enriched experience - a tribute to the journey of its dedicated developer, Anthony Sorise, and the ambitious vision of Sower Interactive.",]}
@@ -256,6 +276,7 @@ const App = () => {
             <SlideControls
                 slideTotal={slideTotal}
                 scrollToSlide={scrollToSlide}
+                slidesContainerRef={slidesContainerRef}
             />
         </>
     );
