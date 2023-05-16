@@ -35,7 +35,7 @@ export default function FeatureCard({ title, image, sideImage, description, html
                     image={image}
                 />
             }
-            <CardContent sx={{ marginBottom: 'auto' }}>
+            <CardContent sx={{ marginBottom: 'auto', paddingBottom: "16px!important" }}>
                 {title &&
                     <Typography gutterBottom variant="h5" component="div">
                         {title}
@@ -63,7 +63,10 @@ export default function FeatureCard({ title, image, sideImage, description, html
 
                     </Typography>
                     {html && (
-                        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+
+                        <Typography variant="body2" paragraph sx={{ marginBottom: 0 }}
+                            dangerouslySetInnerHTML={{ __html: html }} />
+
                     )}
                 </div>
             </CardContent>
