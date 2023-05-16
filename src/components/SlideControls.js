@@ -47,14 +47,13 @@ function SlideControls({ slideTotal, scrollToSlide, slidesContainerRef }) {
                 slide.addEventListener('scroll', handleScroll);
             }
         }
-    
-        // Cleanup: remove the event listener when the component unmounts
+
         return () => {
             if (slide) {
                 slide.removeEventListener('scroll', handleScroll);
             }
         };
-    }, [activeSlide, slidesContainerRef]); // Depend on activeSlide and slidesContainerRef
+    }, [activeSlide, slideTotal, slidesContainerRef]);
 
     //scroll to activeSlide
     useEffect(() => {

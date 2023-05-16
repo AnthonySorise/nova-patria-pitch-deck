@@ -49,14 +49,14 @@ const App = () => {
 
     const StyledContainer = styled(Container)`
         background-color: rgba(0, 0, 0, 0.8);
-        padding: 2em;
+        padding: 1em;
         height: 100%;
         overflow-y: auto;
         height: 75vh;
         max-width:90vw;
         border-radius:1em;
         position:relative;
-        top:4em;
+        top:2.5em;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     `;
 
@@ -71,7 +71,7 @@ const App = () => {
                                     <h2 style={{ margin: "0 0 0.25em 0" }}>
                                         Introducing
                                     </h2>
-                                    <h1 style={{ fontSize: "4em", margin: 0 }}>
+                                    <h1 style={{ fontSize: "3.75em", margin: 0 }}>
                                         Nova Patria
                                     </h1>
                                 </div>
@@ -254,7 +254,7 @@ const App = () => {
                             <FeatureCard
                                 sideImage={AnthonyImage}
                                 description={[
-                                    "Meet Anthony Sorise, the man behind Nova Patria and founder of Sower Interactive. With roots in audio production for AAA titles including Call of Duty: Black Ops II, XCOM II, and Civilization VI, Anthony developed a fascination for programming that in 2012 initiated his journey to master C# and Unity.",
+                                    "With a background spanning over 10 years in audio production for AAA titles, including Call of Duty: Black Ops II, XCOM II, and Civilization VI, Anthony developed a fascination for programming. This passion led him to embark on a journey to master C# and Unity in 2012.",
                                     "Following an intensive web development program in 2017, Anthony worked at various tech companies.  Here, Anthony honed his skills in UI, user experience, and data visualization, integral components now embedded into the fabric of Nova Patria's development.",
                                     "As an avid enthusiast of strategy games, he has dedicated countless hours exploring the genre, delving deeply into the nuances of game design. Today, Anthony balances his diverse background to craft Nova Patria into a strategy game that resonates with fellow enthusiasts. Each design decision and meticulous refinement reflects his commitment to creating a game he, as a gamer, would love to play.",
                                     "Nova Patria is the embodiment of years of passion, tireless effort, and enriched experience - a tribute to the journey of its dedicated developer, Anthony Sorise, and the ambitious vision of Sower Interactive.",]}
@@ -266,7 +266,7 @@ const App = () => {
                                 Publisher Needs
                             </h2>
                             <FeatureCard
-                                html={'<span>To fully realize the vision of Nova Patria, a robust partnership is sought that can provide:</span><ul style="margin-bottom:0"><li><b>Full-time Salary Support: </b> To ensure undivided attention and commitment to the project, financial support for a full-time salary is needed for the remaining 1.5 years of development. This allows for a dedication of 40 to 50 hours per week to the game, accelerating development and ensuring quality.</li><li><b>Art and Music Commissioning: </b> Art currently used is intended to be temp art. Art assets and music assets must be commisioned from a third party.</li><li><b>Collaborative Input: </b> Aside from financial support, Anthony is open to discussions about potential marketing support, feedback on game design and mechanics, and distribution strategies. This is to ensure that Nova Patria reaches its intended audience and achieves its full market potential.</li></ul>'}
+                                html={'<span>To fully realize the vision of Nova Patria, a robust partnership is sought that can provide:</span><ul style="margin-bottom:0"><li><b>Full-time Salary Support: </b> Financial backing for a full-time salary for the remaining 1.5 years of development is crucial. This support will guarantee undivided focus and commitment to the project, allowing a consistent 40 to 50 hours per week to be dedicated to the game. Consequently, this accelerates the development process and ensures the highest quality output.</li><li><b>Art and Music Commissioning: </b> The art assets currently in use serve as placeholders. To elevate the game\'s aesthetic and auditory experience, it is necessary to commission unique art and music assets from professional third parties.</li><li><b>Collaborative Input: </b> Collaboration in several areas is highly welcome. These include potential marketing support, feedback on game design and mechanics, as well as distribution strategies. This collaborative approach is key to ensuring that Nova Patria reaches its target audience and maximizes its market potential.</li></ul>'}
                             />
                         </StyledContainer>
                     </div>

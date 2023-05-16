@@ -1,5 +1,6 @@
 {
   "name": "nova-patria-pitch-deck",
+  "homepage": "https://sowerinteractive.com/nova-patria/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

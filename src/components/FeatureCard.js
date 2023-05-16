@@ -43,13 +43,13 @@ export default function FeatureCard({ title, image, sideImage, description, html
                 }
                 <div style={{ display: 'flex' }}>
                     {sideImage &&
-                                    <div
-                                    style={{
-                                      width: 'fit-content',
-                                      minWidth: '125px',
-                                      marginRight: '15px',
-                                    }}
-                                  >
+                        <div
+                            style={{
+                                width: 'fit-content',
+                                minWidth: '100px',
+                                marginRight: '15px',
+                            }}
+                        >
                             <img src={sideImage} alt={title} style={{ width: '100%' }} />
                         </div>
                     }
@@ -63,8 +63,8 @@ export default function FeatureCard({ title, image, sideImage, description, html
 
                     </Typography>
                     {html && (
-                            <div dangerouslySetInnerHTML={{ __html: html }}></div>
-                        )}
+                        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+                    )}
                 </div>
             </CardContent>
             {buttonLinks && buttonNames && (
