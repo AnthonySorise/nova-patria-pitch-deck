@@ -23,7 +23,7 @@ const StyledButton = styled(Button)({
         backgroundColor: 'black',
         color: 'white',
     },
-    margin: '0 0.5em'
+    margin: '0.5em'
 });
 
 function SlideControls({ slideTotal, scrollToSlide, slidesContainerRef }) {

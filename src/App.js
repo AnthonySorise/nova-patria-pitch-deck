@@ -98,10 +98,10 @@ const App = () => {
                             </h1>
 
                             <FeatureCard
-                                description={['The mission of Nova Patria is to rekindle the intrigue and accessible complexity of simulation and strategy PC games from the \'90s and early 2000s, while capturing the compelling "one more turn" sensation. This allure is achieved through a finely woven tapestry of simulation systems, allowing players to strategize and achieve both short-term and long-term player-driven goals.',
-                                    'From the outset, Nova Patria beckons players to dive in, start creating, and witness the immediate impact of their choices on the vibrant, dynamic simulation. The game\'s depth gradually unfurls, revealing a rich stratum of strategic potential that rewards careful planning, adaptability, and familiarity.',
+                                description={['The mission of Nova Patria is to rekindle the intrigue and accessible complexity of simulation and strategy PC games from the \'90s and early 2000s, while capturing the captivating essence of the "one more turn" experience.". This allure is created through a carefully crafted blend of simulation systems, enabling players to strategize and achieve their player-driven goals, both short-term and long-term.',
+                                    'From the outset, Nova Patria beckons players to dive in, start creating, and witness the immediate impact of their choices on the vibrant, dynamic simulation. The game\'s depth gradually unfolds, revealing a rich strategic potential that rewards careful planning, adaptability, and familiarity.',
                                     'The simulation is transparent, with visual and readily digestible information. The aim is to eliminate hidden mechanics, adopting a tabletop approach to game design that ensures players can fully comprehend, influence, and master the game\'s systems.',
-                                    'Nova Patria is not about refurbishing an old classic; it\'s about drawing inspiration from a diverse range of sources to offer a distinctive experience. It\'s a melding of city and nation-building dynamics from Sid Meier\'s Colonization, economic simulation from the Railroad Tycoon series, and city-building mechanics of classic Sim City games. But it\'s not just about paying homage to these classics; Nova Patria leverages modern hardware to enhance these tried-and-true mechanics, providing a transparent and rewarding gameplay experience. The real magic of Nova Patria lies in its layered complexity - a game easy to pick up, but with a depth that invites mastery.']}
+                                    'Nova Patria is not about refurbishing an old classic; it\'s about drawing inspiration from a diverse range of sources to offer a distinctive experience. It\'s a melding of city and nation-building dynamics from Sid Meier\'s Colonization, economic simulation from the Railroad Tycoon series, and city-building mechanics of classic Sim City games and the Anno series. But it\'s not just about paying homage to these classics; Nova Patria leverages modern hardware to enhance these tried-and-true mechanics, providing a transparent and rewarding gameplay experience. The real magic of Nova Patria lies in its layered complexity - a game easy to pick up, but with a depth that invites mastery.']}
                                 isFullWidth={true}
                             />
                         </StyledContainer>
@@ -125,14 +125,14 @@ const App = () => {
                                 <FeatureCard
                                     title="Aqueducts and Water Networks"
                                     image={AqueductImage}
-                                    description="In Nova Patria, water is the lifeblood of your cities. Rivers and aqueducts are the arteries that carry it. Aqueducts must start at the highest elevation of a spring tile and can be extended up to a certain distance, enabling you to bring water to areas previously unsuitable for city expansion. Building fountains at the end of aqueducts further increases the water's reach, allowing you to construct buildings and grow your city. This crucial feature can be used strategically to either establish new cities in resource-rich areas or expand existing ones, enhancing your city's production capabilities and growth potential."
+                                    description="In Nova Patria, water is the lifeblood of your cities. Rivers and aqueducts are the arteries that carry it. Aqueducts must start at the highest elevation of a spring tile and can be extended up to a certain distance, enabling you to bring water to areas previously unsuitable for city expansion. Building fountains at the end of aqueducts further increases the water's reach, allowing you to construct buildings and grow your city. Expand water networks strategically to either establish new cities in resource-rich areas or expand existing ones, enhancing your city's production capabilities and growth potential."
                                     buttonNames={["Devlog Example"]}
                                     buttonLinks={["https://youtu.be/-ja3vau5O-Q?t=144"]}
                                 />
                                 <FeatureCard
                                     title="Dynamic City Building & Growth"
                                     image={CitiesImage}
-                                    description="Each decision shapes the destiny of your cities. Your urban landscapes grow with your population, and every house built opens the door for additional structures, amplifying your city's capabilities. But growth is a challenge; to expand your city and build new ones, you must meet the resource demands of your citizens. This is city building where strategy, resource management, and population needs intertwine for a truly dynamic simulation."
+                                    description="Each decision shapes the destiny of your cities. Your urban landscapes grow with your population, and every house built opens the door for additional structures, amplifying your city's capabilities. But growth brings more challenge; to expand your city and build new ones, you must meet the resource demands of your citizens."
                                     buttonNames={["Devlog Example 1", "Devlog Example 2"]}
                                     buttonLinks={["https://youtu.be/LNed-h2ZFLs?t=31", "https://youtu.be/SDbVcYqRtuo?t=67"]}
                                 />
@@ -146,14 +146,14 @@ const App = () => {
                                 <FeatureCard
                                     title="Real-Time Supply, Demand, and Pricing"
                                     image={SupplyDemandImage}
-                                    description="Nova Patria features a dynamic supply-demand system where resource prices fluctuate based on your city's production, consumption, and logistics. Prices respond to factors such as consumption levels, production levels, roads, and the ease of transport across the game's terrain. Strategic decisions can open profitable trade routes and provide cheaper resources for your industries. "
+                                    description="Nova Patria features a dynamic supply-demand system where resource prices fluctuate based on a consumption levels, production levels, and the ease of transport across the game's terrain and with roads. Finding and capitalizing on profit opportunities within these dynamic prices becomes crucial, as they hold the key to acquiring the essential means for the growth and prosperity of your colony."
                                     buttonNames={["Devlog Example"]}
                                     buttonLinks={["https://youtu.be/nE2rpJ-T3hE?t=55"]}
                                 />
                                 <FeatureCard
                                     title="Transportation Networks: Pathways to Progress"
                                     image={RoadsImage}
-                                    description="Nova Patria's transportation system takes a novel approach - roads wind and interconnect via vertices of tiles, instead of simply occupying them. This design allows for a more fluid, natural pathing system, and a greater sense of scale within your cities. It also facilitates diagonal travel, bypassing the awkward zigzags of conventional grid-based movement. Public roads expedite the movement of goods, boosting economic productivity. Nearby resources autonomously navigate to their points of demand, while farther ones rely on your strategic transportation network. As governor, commission an array of transport vehicles - from rudimentary carts to advanced trains, and eventually, airships. By establishing well-thought-out trade routes, you set your colony on a path to prosperity."
+                                    description="Nova Patria's transportation system takes a novel approach - roads wind and interconnect via vertices of tiles, instead of simply occupying them. This design allows for a more fluid, natural pathing system, and a greater sense of scale between tiles in the game world. It also facilitates diagonal travel, bypassing the awkward zigzags of conventional grid-based movement. Public roads expedite the movement of goods, boosting economic productivity. Nearby resources autonomously navigate to their points of demand, while farther ones rely on your strategic transportation network. As governor, commission an array of transport vehicles - from rudimentary carts to advanced trains, and eventually, airships."
                                 />
                                 <FeatureCard
                                     title="Diplomacy and Research"
@@ -161,7 +161,7 @@ const App = () => {
                                 />
                                 <FeatureCard
                                     title="Meta Game Progression"
-                                    description="Dive into Nova Patria's innovative Meta Game Progression, a system that intertwines short-term objectives with long-term strategy. From the onset, players handpick three unique goals, turning every playthrough into a personalized mission. Triumph isn't just its own reward - achieve your targets and unlock potent perks that shape future expeditions. With the ability to employ up to three perks each game, the strategic possibilities multiply, ensuring no two games are the same. This continuous cycle of setting goals, earning perks, and discovering synergistic combinations infuses Nova Patria with enduring replayability. Each new game brings a fresh start, offering novel challenges and prospects in this parallel history. Forge your path, craft your narrative, and make Nova Patria truly your own."
+                                    description="From the onset, players handpick three unique goals, turning every playthrough into a personalized mission. Triumph isn't just its own reward - achieve your targets and unlock potent perks that shape future expeditions. With the ability to employ up to three perks each game, the strategic possibilities multiply, ensuring no two games are the same. This continuous cycle of setting goals, earning perks, and discovering synergistic combinations infuses Nova Patria with enduring replayability. Each new game brings a fresh start, offering novel challenges and prospects in this parallel history. Forge your path, craft your narrative, and make Nova Patria truly your own."
                                 />
                             </div>
 
@@ -179,7 +179,7 @@ const App = () => {
                             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "2em" }}>
                                 <FeatureCard
                                     title="A Standout in GamerZakh's Anticipated City-Building Games"
-                                    description="Nova Patria's recognition in GamerZakh's 'The Most Anticipated CITY-BUILDING Games in 2023' video not only attests to the game's distinctive appeal but also indicates the effectiveness of its outreach strategies. The prominent gaming channel, which boasts over 189,000 subscribers, has brought the game into the spotlight in this video from September 2022, amassing over 290,000 views. Despite the existence of a collective segment for smaller indie games in the video, Nova Patria's unique allure merited an individual highlight. This placement is a testament to the game's potential to carve out its own space in the competitive gaming landscape, and a nod to the growing anticipation in the marketplace for a title of this nature."
+                                    description="Nova Patria's recognition in GamerZakh's 'The Most Anticipated CITY-BUILDING Games in 2023' video not only attests to the game's distinctive appeal but also indicates the effectiveness of its outreach strategies. The prominent gaming channel, which boasts over 189,000 subscribers, has brought the game into the spotlight in this video from September 2022, amassing over 290,000 views. Despite the existence of a collective segment for smaller indie games in the video, Nova Patria's unique allure merited an individual highlight. This placement is a testament to the game's potential to carve out its own space in the competitive gaming landscape, and an indicator of the growing anticipation in the marketplace for this type of game."
                                 />
 
                                 <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
@@ -197,7 +197,7 @@ const App = () => {
 
                                 <FeatureCard
                                     title="The Nova Patria Devlog Series"
-                                    description="Initiated in June 2022, six months into the game's development, the Nova Patria devlog series has steadily charted the course of the game's evolution. With six comprehensive videos, it has attracted a dedicated audience of over 130 subscribers, and garnered more than 3,000 views. This peek into the developmental journey of Nova Patria showcases progress, highlights milestones, and shares the behind-the-scenes labor of love that goes into creating an engaging game. The devlog series not only cultivates a bond with the burgeoning community but also stands as a testament to the game's continual evolution, promising an immersive and unique experience upon release."
+                                    description="Initiated in June 2022, six months into the game's development, the Nova Patria devlog series has steadily charted the course of the game's evolution. With six comprehensive videos, it has attracted a dedicated audience of over 130 subscribers, and garnered more than 3,000 views. This peek into the developmental journey of Nova Patria showcases progress, highlights milestones, and shares the behind-the-scenes labor of love that goes into creating an engaging game. The devlog series not only cultivates a bond with the burgeoning community but also stands as a testament to the game's continual and consistent progress."
                                 />
 
                                 <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
@@ -236,7 +236,7 @@ const App = () => {
                             </h1>
 
                             <FeatureCard
-                                description={'The development of Nova Patria began in December 2021, with completion targeted for October 2024. Spearheaded by Anthony Sorise, the project has been a balance of part-time and full-time dedication. Approximately half of the development period involved a part-time commitment of 10 to 15 hours per week, while the remaining duration saw a full-time commitment of 40 to 50 hours per week. Presently, the project is more than halfway through the Alpha stage, and steadily progressing towards the final product.'}
+                                description={'The development of Nova Patria began in December 2021, with completion targeted for October 2024. Spearheaded by Anthony Sorise, the project has been a balance of part-time and full-time dedication. Approximately half of the development period involved a part-time commitment of 15 to 20 hours per week, while the remaining duration saw a full-time commitment of 40 to 55 hours per week. Presently, the project is more than halfway through the alpha stage, and steadily progressing towards the final product.'}
                             />
 
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
@@ -254,10 +254,9 @@ const App = () => {
                             <FeatureCard
                                 sideImage={AnthonyImage}
                                 description={[
-                                    "With a background spanning over 10 years in audio production for AAA titles, including Call of Duty: Black Ops II, XCOM II, and Civilization VI, Anthony developed a fascination for programming. This passion led him to embark on a journey to master C# and Unity in 2012.",
+                                    "With a background spanning over 10 years in audio production for AAA titles, including Call of Duty: Black Ops II, XCOM II, and Civilization VI, Anthony developed a fascination for programming. This passion led him to embark on a journey starting in 2012 to master C# and Unity.",
                                     "Following an intensive web development program in 2017, Anthony worked at various tech companies.  Here, Anthony honed his skills in UI, user experience, and data visualization, integral components now embedded into the fabric of Nova Patria's development.",
-                                    "As an avid enthusiast of strategy games, he has dedicated countless hours exploring the genre, delving deeply into the nuances of game design. Today, Anthony balances his diverse background to craft Nova Patria into a strategy game that resonates with fellow enthusiasts. Each design decision and meticulous refinement reflects his commitment to creating a game he, as a gamer, would love to play.",
-                                    "Nova Patria is the embodiment of years of passion, tireless effort, and enriched experience - a tribute to the journey of its dedicated developer, Anthony Sorise, and the ambitious vision of Sower Interactive.",]}
+                                    "As an avid enthusiast of strategy games, he has dedicated countless hours exploring the genre, delving deeply into the nuances of game design. Today, Anthony balances his diverse background to craft Nova Patria into a strategy game that resonates with fellow enthusiasts. Each design decision and meticulous refinement reflects his commitment to creating a game he, as a gamer, would love to play."]}
                                 buttonNames={["Portfolio", "Email"]}
                                 buttonLinks={["https://anthonysorise.com/", "mailto:anthony.sorise@sowerinteractive.com"]}
                             />
