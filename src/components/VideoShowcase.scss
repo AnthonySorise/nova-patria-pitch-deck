@@ -21,3 +21,18 @@
       max-width: calc(100% - 20px);
     }
   }
+
+  .video-item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .video-item-overlay{
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
