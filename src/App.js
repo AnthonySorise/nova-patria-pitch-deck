@@ -149,7 +149,7 @@ const App = () => {
                                 <FeatureCard
                                     title="Real-Time Supply, Demand, and Pricing"
                                     image={SupplyDemandImage}
-                                    description="Nova Patria features a dynamic supply-demand system where resource prices fluctuate geographically based on a consumption levels, production levels, and the ease of transport across the game's terrain and with roads. Finding and capitalizing on profit opportunities within these dynamic prices becomes crucial, as they hold the key to acquiring the essential means for the growth and prosperity of your colony."
+                                    description="Nova Patria features a dynamic supply-demand system where resource prices fluctuate geographically based on consumption levels, production levels, and the ease of transport across the game's terrain and constructed roads. Finding and capitalizing on profit opportunities within these dynamic prices becomes crucial, as they hold the key to acquiring the essential means for the growth and prosperity of your colony."
                                     buttonNames={["Devlog Example"]}
                                     buttonLinks={["https://youtu.be/nE2rpJ-T3hE?t=55"]}
                                 />
@@ -163,8 +163,8 @@ const App = () => {
                                     description="As governor, you shoulder the responsibility of aligning the needs of your thriving colony with the overarching interests of the Empire. Engage in nuanced diplomacy and navigate complex relationships beyond your borders. To fuel progress, finance institutions abroad, accelerating technological advancements and propelling your colony into a new age. With strategic diplomacy and calculated investment in research, your influence in the New World will be unparalleled."
                                 />
                                 <FeatureCard
-                                    title="Meta Game Progression"
-                                    description="From the onset, players handpick three unique goals, turning every playthrough into a personalized mission. Triumph isn't just its own reward - achieve your targets and unlock potent perks that shape future expeditions. With the ability to employ up to three perks each game, the strategic possibilities multiply, ensuring no two games are the same. This continuous cycle of setting goals, earning perks, and discovering synergistic combinations infuses Nova Patria with enduring replayability. Each new game brings a fresh start, offering novel challenges and prospects in this parallel history. Forge your path, craft your narrative, and make Nova Patria truly your own."
+                                    title="Personalized Missions and Perks"
+                                    description="From the onset, players handpick three unique goals, turning every playthrough into a personalized unique mission. Triumph isn't just its own reward - achieve your targets and unlock potent perks that shape future expeditions. With the ability to employ up to three perks each game, the strategic possibilities multiply, ensuring no two games are the same. This continuous cycle of setting goals, earning perks, and discovering synergistic combinations infuses Nova Patria with enduring replayability. Each new game brings a fresh start, offering novel challenges and prospects in this parallel history. Forge your path, craft your narrative, and make Nova Patria truly your own."
                                 />
                             </div>
 
