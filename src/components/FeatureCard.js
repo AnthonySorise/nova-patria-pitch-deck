@@ -38,7 +38,7 @@ export default function FeatureCard({ title, image, sideImage, description, html
             <CardContent sx={{ marginBottom: 'auto', paddingBottom: "16px!important" }}>
                 {title &&
                     <Typography gutterBottom variant="h5" component="div">
-                        {title}
+                        <span style={{fontWeight: 'bold', fontFamily: 'Cinzel'}}>{title}</span>
                     </Typography>
                 }
                 <div style={{ display: 'flex' }}>

@@ -117,7 +117,7 @@ const App = () => {
                             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "2em" }}>
 
                                 <FeatureCard
-                                    title="Procedurally Generated Isometric World"
+                                    title="Procedural Isometric World"
                                     image={Slide01BackgroundImage}
                                     description="Every game is unique. Nova Patria's procedurally generated environment creates diverse landscapes— oceans, rivers, hills, mountains, forests, and drylands. Each plays a crucial role, shaping gameplay and adding a layer of strategic depth to your city and resource management challenges."
                                 />
@@ -150,7 +150,7 @@ const App = () => {
                                     buttonLinks={["https://youtu.be/nE2rpJ-T3hE?t=55"]}
                                 />
                                 <FeatureCard
-                                    title="Transportation Networks: Pathways to Progress"
+                                    title="Transportation Networks"
                                     image={RoadsImage}
                                     description="Nova Patria's transportation system takes a novel approach - roads wind and interconnect via vertices of tiles, instead of simply occupying them entirely. This design allows for a more fluid, natural pathing system, and a greater sense of scale between tiles in the game world. It also facilitates diagonal travel, bypassing the awkward zigzags of conventional grid-based movement. Public roads expedite the movement of goods, boosting economic productivity. Nearby resources autonomously navigate to their points of demand, while farther ones rely on your strategic transportation network. As governor, commission an array of transport vehicles - from rudimentary carts to advanced trains, and eventually, airships - to optimize your colony's growth."
                                 />
