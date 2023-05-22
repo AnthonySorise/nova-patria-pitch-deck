@@ -50,14 +50,18 @@ const App = () => {
     const StyledContainer = styled(Container)`
         background-color: rgba(0, 0, 0, 0.8);
         padding: 1em;
-        height: 100%;
         overflow-y: auto;
         height: 75vh;
+        min-height: 85vh;
         max-width:90vw;
         border-radius:1em;
         position:relative;
-        top:2.5em;
+        top:1.5em;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+
+        @media (max-width: 768px) {
+            min-height: unset;
+        }
     `;
 
     return (
@@ -256,13 +260,13 @@ const App = () => {
                                     "With a creative spirit ingrained within him, Anthony Sorise possesses a diverse range of experiences that uniquely qualify him to bring Nova Patria to life.",
                                     "With a background spanning over 10 years in audio production for AAA titles, including Call of Duty: Black Ops II, XCOM 2, and Civilization VI, Anthony developed a fascination for programming. This passion led him to embark on a journey starting in 2012 to master C# and Unity.",
                                     "Following an intensive web development program in 2017, Anthony worked at various tech companies.  Here, he honed his skills in UI, user experience, and data visualization; integral components now embedded into the fabric of Nova Patria's development.",
-                                    "As an avid enthusiast of strategy games, Anthony has dedicated countless hours exploring the genre, delving deeply into the nuances of game design. Today, he balances his diverse background to craft Nova Patria into a strategy game that resonates with fellow enthusiasts. Each design decision and meticulous refinement reflects his commitment to creating a game he, as a gamer, would love to play."]}
+                                    "As an avid enthusiast of strategy games, Anthony has dedicated countless hours exploring the genre, delving deeply into the nuances of game design. Today, he balances his diverse background to craft Nova Patria into a game that resonates with fellow enthusiasts. Each design decision and meticulous refinement reflects his commitment to creating a game he, as a gamer, would love to play."]}
                                 buttonNames={["Portfolio", "Email"]}
                                 buttonLinks={["https://anthonysorise.com/", "mailto:anthony.sorise@sowerinteractive.com"]}
                             />
 
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
-                                Publisher Needs
+                                Development Needs
                             </h2>
                             <FeatureCard
                                 html={'<span>To fully realize the vision of Nova Patria, a robust partnership is sought that can provide:</span><ul style="margin-bottom:0"><li><b>Full-time Salary Support: </b> Financial backing for a full-time salary for the remaining 1.5 years of development is crucial. This support will guarantee undivided focus and commitment to the project, allowing a consistent 40 to 56 hours per week to be dedicated to the game. Consequently, this accelerates the development process and ensures the highest quality output.<br /><br /></li><li><b>Art and Music Commissioning: </b> The art assets currently in use serve as placeholders. To elevate the game\'s aesthetic and auditory experience, it is necessary to commission unique art and music assets from professional third parties.<br /><br /></li><li><b>Collaborative Input: </b> Collaboration in several areas is highly welcome. These include potential marketing support, feedback on game design and mechanics, as well as distribution strategies. This collaborative approach is key to ensuring that Nova Patria reaches its target audience and maximizes its market potential.</li></ul>'}
