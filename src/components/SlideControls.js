@@ -44,7 +44,13 @@ function SlideControls({ slideTotal, scrollToSlide, slidesContainerRef }) {
         if (slidesContainerRef.current) {
             slide = slidesContainerRef.current.children[activeSlide].firstElementChild.firstElementChild;
             if (slide) {
-                slide.addEventListener('scroll', handleScroll);
+                const hasOverflow = slide.scrollHeight > slide.clientHeight;
+                if(!hasOverflow){
+                    setIsUnlockButtonGlow(true);
+                }
+                else{
+                    slide.addEventListener('scroll', handleScroll);
+                }
             }
         }
 
