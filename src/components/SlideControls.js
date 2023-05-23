@@ -33,7 +33,7 @@ function SlideControls({ slideTotal, scrollToSlide, slidesContainerRef }) {
     //button glow
     useEffect(() => {
         setIsUnlockButtonGlow(false);
-    
+
         let slide;
         const handleScroll = () => {
             if (slide) {
@@ -57,9 +57,21 @@ function SlideControls({ slideTotal, scrollToSlide, slidesContainerRef }) {
 
     //scroll to activeSlide
     useEffect(() => {
-        scrollToSlide(activeSlide);
+        scrollToActiveSlide();
     }, [activeSlide, scrollToSlide]);
 
+    // window resize
+    useEffect(() => {
+        window.addEventListener('resize', scrollToActiveSlide);
+
+        return () => {
+            window.removeEventListener('resize', scrollToActiveSlide);
+        };
+    }, [activeSlide, scrollToSlide]);
+
+    const scrollToActiveSlide = () => {
+        scrollToSlide(activeSlide);
+    };
     const handlePrevSlide = () => {
         setActiveSlide(Math.max(0, activeSlide - 1));
     };
