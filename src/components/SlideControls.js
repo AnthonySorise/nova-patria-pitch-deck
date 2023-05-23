@@ -63,21 +63,22 @@ function SlideControls({ slideTotal, scrollToSlide, slidesContainerRef }) {
 
     //scroll to activeSlide
     useEffect(() => {
-        scrollToActiveSlide();
+        scrollToSlide(activeSlide);
     }, [activeSlide, scrollToSlide]);
 
     // window resize
     useEffect(() => {
-        window.addEventListener('resize', scrollToActiveSlide);
-
+        const handleResize = () => {
+            scrollToSlide(activeSlide);
+        };
+    
+        window.addEventListener('resize', handleResize);
+    
         return () => {
-            window.removeEventListener('resize', scrollToActiveSlide);
+            window.removeEventListener('resize', handleResize);
         };
     }, [activeSlide, scrollToSlide]);
 
-    const scrollToActiveSlide = () => {
-        scrollToSlide(activeSlide);
-    };
     const handlePrevSlide = () => {
         setActiveSlide(Math.max(0, activeSlide - 1));
     };
