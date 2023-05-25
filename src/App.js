@@ -91,7 +91,7 @@ const App = () => {
                             </div>
                             <div style={{ margin: "1em" }}>
                                 <FeatureCard
-                                    description={'Drive the gears of progress and innovation in Nova Patria, an economic, transport, and city simulation game set in an alternate history where a steam-powered Roman Empire never fell but instead ventured into the New World. As a colonial governor at the precipice of an early industrial revolution, plot your path, expand horizons, and meticulously manage your burgeoning cities and resources within a rich, dynamic, isometric, procedurally generated world.'}
+                                    description={'Drive the gears of progress and innovation in Nova Patria, an economic, transport, and city simulation game set in an alternate history where a steam-powered Roman Empire never fell but instead ventured into the New World. As a colonial governor at the precipice of an early industrial revolution, plot your path, expand horizons, and manage your burgeoning cities and resources within a dynamic, isometric, procedurally generated world.'}
                                     isFullWidth={true}
                                     isBold={true}
                                 />
@@ -102,8 +102,8 @@ const App = () => {
                             </h1>
 
                             <FeatureCard
-                                description={['The mission of Nova Patria is to rekindle the intrigue and accessible complexity of simulation and strategy PC games from the \'90s and early 2000s, while capturing the captivating essence of the "one more turn" experience. This allure is created through a carefully crafted blend of simulation systems, empowering players to strategize and attain their self-defined goals, spanning both short-term triumphs and long-term ambitions.',
-                                    'From the outset, Nova Patria beckons players to dive in, start creating, and witness the immediate impact of their choices on the vibrant, dynamic simulation. The game\'s depth gradually unfolds, revealing a rich strategic potential that rewards careful planning, adaptability, and familiarity. The simulation is transparent, with visual and readily digestible information. The aim is to eliminate hidden mechanics, adopting a tabletop approach to game design that ensures players can fully comprehend, influence, and master the game\'s systems.',
+                                description={['The mission of Nova Patria is to rekindle the intrigue and accessible complexity of simulation and strategy PC games from the \'90s and early 2000s, while capturing the captivating essence of the "one more turn" experience. This allure is created through a carefully crafted blend of simulation systems, empowering players to strategize and attain their self-defined goals, including both short-term triumphs and long-term ambitions.',
+                                    'From the outset, Nova Patria beckons players to dive in, start creating, and witness the immediate impact of their choices on the vibrant, dynamic simulation. The game\'s depth gradually unfolds, revealing a rich strategic potential that rewards careful planning and adaptability. The simulation is transparent, with visual and readily digestible information. The aim is to eliminate hidden mechanics, adopting a tabletop approach to game design that ensures players can fully comprehend, influence, and master the game\'s systems.',
                                     'Nova Patria is not about refurbishing an old classic; it\'s about drawing inspiration from a diverse range of sources to offer a distinctive experience. It\'s a melding of city and nation-building dynamics from Sid Meier\'s Colonization, economic simulation from the Railroad Tycoon series, and city-building mechanics of Sim City games and the Anno series. But it\'s not just about paying homage to these classics; Nova Patria leverages modern hardware to enhance these tried-and-true mechanics to provide a deeply complex yet accessible simulation. The real magic of Nova Patria lies in its layered complexity - a game easy to pick up, but with a depth that invites mastery.']}
                                 isFullWidth={true}
                             />
@@ -123,7 +123,7 @@ const App = () => {
                                 <FeatureCard
                                     title="Procedural Isometric World"
                                     image={Slide01BackgroundImage}
-                                    description="Every game is unique. Nova Patria's procedurally generated environment creates diverse landscapes— oceans, rivers, hills, mountains, forests, and drylands. Each plays a crucial role, shaping gameplay and adding a layer of strategic depth to your city and resource management challenges."
+                                    description="Every game is unique. Nova Patria's procedurally generated environment creates diverse landscapes— oceans, rivers, springs, hills, mountains, forests, and drylands. Each plays a crucial role, shaping gameplay and adding a layer of strategic depth to your city and resource management challenges."
                                 />
                                 <FeatureCard
                                     title="Aqueducts and Water Networks"
@@ -164,7 +164,7 @@ const App = () => {
                                 />
                                 <FeatureCard
                                     title="Personalized Missions and Perks"
-                                    description="From the onset, players handpick three unique goals, turning every playthrough into a personalized unique mission. Triumph isn't just its own reward - achieve your targets and unlock potent perks that shape future expeditions. With the ability to employ up to three perks each game, the strategic possibilities multiply, ensuring no two games are the same. This continuous cycle of setting goals, earning perks, and discovering synergistic combinations infuses Nova Patria with enduring replayability. Each new game brings a fresh start, offering novel challenges and prospects in this parallel history. Forge your path, craft your narrative, and make Nova Patria truly your own."
+                                    description="From the onset, players handpick three unique goals, turning every playthrough into a personalized unique mission. Triumph isn't just its own reward - achieve your targets and unlock perks that shape future expeditions. With the ability to employ up to three perks each game, the strategic possibilities multiply, ensuring no two games are the same. This continuous cycle of setting goals, earning perks, and discovering synergistic combinations infuses Nova Patria with enduring replayability. Each new game brings a fresh start, offering novel challenges and prospects in this parallel history. Forge your path, craft your narrative, and make Nova Patria truly your own."
                                 />
                             </div>
 
@@ -221,8 +221,8 @@ const App = () => {
                                     description={['Nova Patria\'s social media campaign is steadily gaining traction. With over 50 active members on Discord and the same number of subscribers on the mailing list, it\'s clear that a tight-knit community of dedicated fans is forming. These enthusiasts are not just passive observers but active contributors, keenly participating in discussions and excited to aid in the game\'s beta testing process.',
                                         'The enthusiasm spills over to Reddit, where Nova Patria has generated a strong presence. Posts showcasing the game have amassed over 1,100 upvotes, reflecting positive reception and genuine interest from the wider gaming community.',
                                         'Each interaction, each upvote, each enthusiastic discussion is not just a number – it\'s a testament to Nova Patria\'s ability to captivate and inspire. As the game continues to evolve, so too does its community. The enthusiasm and anticipation that resonates within these platforms is a powerful indicator of the game\'s potential and a promising sign of the momentum building towards Nova Patria\'s full release.']}
-                                    buttonNames={["Discord", "Reddit"]}
-                                    buttonLinks={['https://discord.gg/jPsPvhMSYv', 'https://www.reddit.com/user/SowerInteractive/?sort=top']}
+                                    buttonNames={[ 'Reddit', 'Discord']}
+                                    buttonLinks={['https://www.reddit.com/user/SowerInteractive/?sort=top', 'https://discord.gg/jPsPvhMSYv']}
                                     isFullWidth={true}
                                 />
                             </div>
@@ -239,7 +239,7 @@ const App = () => {
                             </h1>
 
                             <FeatureCard
-                                description={'The development of Nova Patria has been solely undertaken by developer Anthony Sorise under the newly formed Sower Interactive LLC. Initiated in December 2021, the project is expected to reach completion in October 2024. Development been a balance of part-time and full-time dedication. Approximately half of the development period involved a part-time commitment of 15 to 20 hours per week, while the remaining duration saw a full-time commitment of 40 to 56 hours per week. Presently, the project is more than halfway through the alpha stage, and steadily progressing towards the final product.'}
+                                description={'The development of Nova Patria has been solely undertaken by developer Anthony Sorise under the newly formed Sower Interactive LLC. Initiated in December 2021, the project is expected to reach completion in October 2024. Thus far development has been a balance of part-time and full-time dedication. Approximately half of the development period involved a part-time commitment of about 20 hours per week, while the other half saw a full-time commitment of 40 to 56 hours per week. Presently, the project is more than halfway through the alpha stage, and steadily progressing towards the final product.'}
                             />
 
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
@@ -269,7 +269,7 @@ const App = () => {
                                 Development Needs
                             </h2>
                             <FeatureCard
-                                html={'<span>To fully realize the vision of Nova Patria, a robust partnership is sought that can provide:</span><ul style="margin-bottom:0"><li><b>Full-time Salary Support: </b> Financial backing for a full-time salary for the remaining 1.5 years of development is crucial. This support will guarantee undivided focus and commitment to the project, allowing a consistent 40 to 56 hours per week to be dedicated to the game. Consequently, this accelerates the development process and ensures the highest quality output.<br /><br /></li><li><b>Art and Music Commissioning: </b> The art assets currently in use serve as placeholders. To elevate the game\'s aesthetic and auditory experience, it is necessary to commission unique art and music assets from professional third parties.<br /><br /></li><li><b>Collaborative Input: </b> Collaboration in several areas is highly welcome. These include potential marketing support, feedback on game design and mechanics, as well as distribution strategies. This collaborative approach is key to ensuring that Nova Patria reaches its target audience and maximizes its market potential.</li></ul>'}
+                                html={'<span>To fully realize the vision of Nova Patria, a robust partnership is sought that can provide:</span><ul style="margin-bottom:0"><li><b>Financial Support: </b> Financial backing for the remaining 1.5 years of development is crucial. This support will guarantee undivided focus and commitment to the project, allowing a consistent 40 to 56 hours per week to be dedicated to the game. Consequently, this accelerates the development process and ensures the highest quality output.<br /><br /></li><li><b>Art and Music Commissioning: </b> The art assets currently in use serve as placeholders. To elevate the game\'s aesthetic and auditory experience, it is necessary to commission unique art and music assets from professional third parties.<br /><br /></li><li><b>Collaborative Input: </b> Collaboration in several areas is highly welcome. These include potential marketing support, feedback on game design and mechanics, as well as distribution strategies. This collaborative approach is key to ensuring that Nova Patria reaches its target audience and maximizes its market potential.</li></ul>'}
                             />
                         </StyledContainer>
                     </div>
