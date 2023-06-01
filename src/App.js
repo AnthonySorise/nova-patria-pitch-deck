@@ -239,7 +239,7 @@ const App = () => {
                             </h1>
 
                             <FeatureCard
-                                description={'The development of Nova Patria has been solely undertaken by developer Anthony Sorise under the newly formed Sower Interactive LLC. Initiated in December 2021, the project is expected to reach completion in October 2024. Thus far development has been a balance of part-time and full-time dedication. Approximately half of the development period involved a part-time commitment of about 20 hours per week, while the other half saw a full-time commitment of 40 to 56 hours per week. Presently, the project is more than halfway through the alpha stage, and steadily progressing towards the final product.'}
+                                description={'The development of Nova Patria has been solely undertaken by developer Anthony Sorise under the newly formed Sower Interactive LLC. Initiated in December 2021, the project is expected to reach completion in Q4 2024. Thus far development has been a balance of part-time and full-time dedication. Approximately half of the development period involved a part-time commitment of about 20 hours per week, while the other half saw a full-time commitment of 40 to 56 hours per week. Presently, the project is more than halfway through the alpha stage, and steadily progressing towards the final product.'}
                             />
 
                             <h2 style={{ margin: "1em 0 0.5em 0" }}>
