@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import EmailIcon from '@mui/icons-material/Email';
 import Container from '@mui/material/Container';
 import VideoShowcase from './components/VideoShowcase'
 import SlideControls from './components/SlideControls';
@@ -64,6 +66,25 @@ const App = () => {
         }
     `;
 
+const StyledButton = styled(Button)({
+    backgrounColor: 'transparent',
+
+    borderRadius: 0,
+    fontSize: '1.5rem',
+    textTransform: 'uppercase',
+    padding: '0.5rem 1.5rem',
+    '&:hover': {
+        backgroundColor: 'black',
+        color: 'white',
+    },
+    margin: '0.5em',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+
+    display: 'flex',
+});
+
+
     return (
         <>
             <div id="SlidesContainer" ref={slidesContainerRef}>
@@ -102,7 +123,7 @@ const App = () => {
                             </h1>
 
                             <FeatureCard
-                                description={['Nova Patria revisits the essence of \'90s and early 2000s simulation and strategy games, infusing them with fresh, innovative ideas. More than an homage to great classic PC games, it\'s about reinterpreting what made those titles memorable, integrating a fusion of diverse mechanics to create a gameplay experience that feels both familiar and excitingly new. In Nova Patria, the strategy of nation-building seen in Sid Meier\'s Colonization, the meticulous city planning of SimCity, and the nuanced economic challenges of the Anno series are not just sources of inspiration but foundations for innovation. Leveraging modern hardware capabilities, Nova Patria enriches these classic elements with fresh perspectives and mechanics. Players are invited to construct an intricately simulated world that\'s engaging to manage and mesmerizing to watch unfold, guiding a colony’s growth from a simple village into a vast thriving state.']}
+                                description={['Nova Patria revisits the essence of \'90s and early 2000s simulation and strategy games, infusing them with fresh, innovative ideas. More than an homage to great classic PC games, it\'s about reinterpreting what made those titles memorable, integrating a fusion of diverse mechanics to create a gameplay experience that feels both familiar and excitingly new. In Nova Patria, the strategy of nation-building seen in Sid Meier\'s Colonization, the meticulous city planning of SimCity, and the nuanced economic challenges of the Anno series are not just sources of inspiration but foundations for innovation. Leveraging modern hardware capabilities, Nova Patria enriches these classic elements with a powerful simulation that is engaging to manage and mesmerizing to watch unfold, guiding a colony’s growth from a simple village into a vast thriving state.']}
                                 isFullWidth={true}
                             />
                         </StyledContainer>
@@ -127,15 +148,15 @@ const App = () => {
                                     title="Dynamic City Building & Growth"
                                     image={CitiesImage}
                                     description="Each decision shapes the destiny of your cities. Your urban landscapes grow with your population, and every house built opens the door for additional structures, amplifying your city's capabilities. But growth brings more challenge; to expand your city and build more within it, you must meet the resource demands of your growing population."
-                                    buttonNames={["Devlog Example 1", "Devlog Example 2"]}
-                                    buttonLinks={["https://youtu.be/LNed-h2ZFLs?t=31", "https://youtu.be/SDbVcYqRtuo?t=67"]}
+                                    // buttonNames={["Devlog Example 1", "Devlog Example 2"]}
+                                    // buttonLinks={["https://youtu.be/LNed-h2ZFLs?t=31", "https://youtu.be/SDbVcYqRtuo?t=67"]}
                                 />
                                 <FeatureCard
                                     title="Intricate Simulated Economy"
                                     image={EcnomyImage}
                                     description="Nova Patria is built upon an intricate economic simulation, where numerous supply chains underpin the prosperity of your colony. From the goods consumed by your citizens to the resources that construct your buildings and infrastructure, every item produced plays a crucial role. Success in Nova Patria requires a delicate balancing act, accurately gauging the needs of your colony and adjusting production and distribution accordingly to ensure a harmonious and efficient system."
-                                    buttonNames={["Devlog Example"]}
-                                    buttonLinks={["https://youtu.be/YEBm7VCgLLE?t=65"]}
+                                    // buttonNames={["Devlog Example"]}
+                                    // buttonLinks={["https://youtu.be/YEBm7VCgLLE?t=65"]}
                                 />
                                 {/* <FeatureCard
                                     title="Real-Time Supply, Demand, and Pricing"
@@ -148,8 +169,8 @@ const App = () => {
                                     title="Aqueducts and Water Networks"
                                     image={AqueductImage}
                                     description="In Nova Patria, water is the lifeblood of your cities. Rivers and aqueducts are the arteries that carry it. Aqueducts must start at the highest elevation of a spring tile and can be extended up to a certain distance, enabling you to bring water to areas previously unsuitable for city expansion. Building fountains at the end of aqueducts further increases the water's reach, allowing you to construct buildings and grow your city. Expand water networks strategically to either establish new cities in resource-rich areas or expand existing cities to create sprawling economic powerhouses."
-                                    buttonNames={["Devlog Example"]}
-                                    buttonLinks={["https://youtu.be/-ja3vau5O-Q?t=144"]}
+                                    // buttonNames={["Devlog Example"]}
+                                    // buttonLinks={["https://youtu.be/-ja3vau5O-Q?t=144"]}
                                 />
                                 <FeatureCard
                                     title="Transportation Networks and Trade"
@@ -198,7 +219,7 @@ const App = () => {
 
                                 <FeatureCard
                                     title="The Nova Patria Devlog Series"
-                                    description="Initiated in June 2022, six months into the game's development, the Nova Patria devlog series has steadily charted the course of the game's evolution. With six comprehensive videos, it has attracted a dedicated audience of over 130 subscribers, and garnered more than 3,000 views. This peek into the developmental journey of Nova Patria showcases progress, highlights milestones, and shares the behind-the-scenes labor of love that goes into creating an engaging game. The devlog series not only cultivates a bond with the burgeoning community but also stands as a testament to the game's continual and consistent progress."
+                                    description="Initiated in June 2022, six months into the game's development, the Nova Patria devlog series has steadily charted the course of the game's evolution. With eight comprehensive videos, it has attracted a dedicated audience of over 140 subscribers, and garnered more than 4,500 views. This peek into the developmental journey of Nova Patria showcases progress, highlights milestones, and shares the behind-the-scenes labor of love that goes into creating an engaging game. The devlog series not only cultivates a bond with the burgeoning community but also stands as a testament to the game's continual and consistent progress."
                                 />
 
                                 <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
@@ -217,7 +238,7 @@ const App = () => {
                                 <FeatureCard
                                     title="Nova Patria's Growing Online Presence"
                                     description={['Nova Patria\'s social media campaign is steadily gaining traction. With over 50 active members on Discord and the same number of subscribers on the mailing list, it\'s clear that a tight-knit community of dedicated fans is forming. These enthusiasts are not just passive observers but active contributors, keenly participating in discussions and excited to aid in the game\'s beta testing process.',
-                                        'The enthusiasm spills over to Reddit, where Nova Patria has generated a strong presence. Posts showcasing the game have amassed over 1500 upvotes, reflecting positive reception and genuine interest from the wider gaming community.',]}
+                                        'The enthusiasm spills over to Reddit, where Nova Patria has generated a strong presence. Posts showcasing the game have amassed over 1000 upvotes, reflecting positive reception and genuine interest from the wider gaming community.',]}
                                     buttonNames={[ 'Reddit', 'Discord']}
                                     buttonLinks={['https://www.reddit.com/user/SowerInteractive/?sort=top&t=all', 'https://discord.gg/jPsPvhMSYv']}
                                     isFullWidth={true}
@@ -236,7 +257,7 @@ const App = () => {
                             </h1>
 
                             <FeatureCard
-                                description={'The development of Nova Patria has been solely undertaken by developer Anthony Sorise under the newly formed Sower Interactive LLC. Initiated in December 2021, the project is expected to reach completion in Q4 2024. Thus far development has been a balance of part-time and full-time dedication. Approximately half of the development period involved a part-time commitment of about 20 hours per week, while the other half saw a full-time commitment of 40 to 56 hours per week. Presently, the project is reaching the beta stage, and steadily progressing towards the final product.'}
+                                description={'The development of Nova Patria has been solely undertaken by developer Anthony Sorise under the newly formed Sower Interactive LLC. Initiated in December 2021, development has been a balance of part-time and full-time dedication. Approximately half of the development period involved a part-time commitment of about 20 hours per week, while the other half saw a full-time commitment of 40 to 56 hours per week. Currently, Nova Patria is on the cusp of entering its beta phase, advancing steadily towards its final form. With a focused full-time effort, the project is poised to conclude its development phase within the next 12 months.'}
                             />
 
                             {/* <h2 style={{ margin: "1em 0 0.5em 0" }}>
@@ -255,7 +276,7 @@ const App = () => {
                                 sideImage={AnthonyImage}
                                 description={[
                                     "With a creative spirit ingrained within him, Anthony Sorise possesses a diverse range of experiences that uniquely qualify him to bring Nova Patria to life.",
-                                    "With a background spanning over 10 years in audio production for AAA titles, including Call of Duty: Black Ops II, XCOM 2, and Civilization VI, Anthony developed a fascination for programming. This passion led him to embark on a journey starting in 2012 to master C# and Unity.",
+                                    "With a background spanning over 10 years in audio production for AAA titles, including Call of Duty: Black Ops II, XCOM 2, and Civilization VI, Anthony developed a fascination for programming and game design. This passion led him to embark on a journey starting in 2012 to master C# and Unity.",
                                     "Following an intensive web development program in 2017, Anthony worked at various tech companies.  Here, he honed his skills in UI, user experience, and data visualization; integral components now embedded into the fabric of Nova Patria's development.",
                                     "As an avid enthusiast of strategy games, Anthony has dedicated countless hours exploring the genre, delving deeply into the nuances of game design. Today, he balances his diverse background to craft Nova Patria into a game that resonates with fellow enthusiasts. Each design decision and meticulous refinement reflects his commitment to creating a game he, as a gamer, would love to play."]}
                                 buttonNames={["Portfolio", "Email"]}
@@ -266,8 +287,16 @@ const App = () => {
                                 Development Needs
                             </h2>
                             <FeatureCard
-                                html={'<span>To fully realize the vision of Nova Patria, a robust partnership is sought that can provide:</span><ul style="margin-bottom:0"><li><b>Development Funding: </b> Financial backing for the remaining year of development is crucial. This support will guarantee undivided focus and commitment to the project, allowing a consistent 40 to 56 hours per week to be dedicated to the game. Consequently, this accelerates the development process and ensures the highest quality output.<br /><br /></li><li><b>Art and Music Commissioning: </b> The art assets currently in use serve as placeholders. To elevate the game\'s aesthetic and auditory experience, it is necessary to commission unique art and music assets from professional third parties.<br /><br /></li><li><b>Collaborative Input: </b> Collaboration in several areas is highly welcome. These include potential marketing support, feedback on game design and mechanics, as well as distribution strategies. This collaborative approach is key to ensuring that Nova Patria reaches its target audience and maximizes its market potential.</li></ul>'}
+                                html={'<span>To fully realize the vision of Nova Patria, a robust partnership is sought that can provide:</span><ul style="margin-bottom:0"><li><b>Development Funding: </b>Financial backing for the remaining year of development is crucial. This support will guarantee undivided focus and commitment to the project, allowing a consistent 40 to 56 hours per week to be dedicated to the game, accelerating the development process and ensures the highest quality output.<br /><br /></li><li><b>Art and Music Commissioning: </b>The art assets currently in use serve as placeholders. To elevate the game\'s aesthetic and auditory experience, it is necessary to commission unique art and music assets from professional third parties.<br /><br /></li><li><b>Marketing Strategy and Execution:</b> A meticulously crafted and executed marketing strategy is paramount. This involves identifying and engaging with potential fanbases, utilizing targeted advertising, working with influencers, and leveraging social media platforms.<br /><br /></li><li><b>Collaborative Input: </b>Collaboration in many areas is highly welcome, including feedback on game design and mechanics with the aim being making the game as fun and marketable as possible.<br /></li></ul>'}
                             />
+
+                            <StyledButton
+                            href="mailto:anthony.sorise@sowerinteractive.com"
+                            startIcon={<EmailIcon />}
+                                >
+                            Send Email
+                            </StyledButton>
+
                         </StyledContainer>
                     </div>
                 </div>
@@ -278,6 +307,7 @@ const App = () => {
                 scrollToSlide={scrollToSlide}
                 slidesContainerRef={slidesContainerRef}
             />
+            
         </>
     );
 };
