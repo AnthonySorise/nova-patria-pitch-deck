@@ -107,7 +107,7 @@ function SlideControls({ slideTotal, scrollToSlide, slidesContainerRef }) {
                     </StyledButton>
                 </div>
                 <div id="copyright">
-                    <span>Copyright © 2023 </span>
+                    <span>Copyright © 2024 </span>
                     <a href='https://sowerinteractive.com/' target='_blank' rel='noreferrer'>Sower Interactive LLC</a>
                     <span>. All rights reserved.</span>
                 </div>
